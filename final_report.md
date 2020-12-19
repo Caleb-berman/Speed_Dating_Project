@@ -113,7 +113,8 @@ This implied a similar overwhelming importance on attractiveness, shared interes
 | Gender | Same Race | Round |
 
 
-Some interesting inferences can be made from these graphs. For starters, we observed that many of the most important features behaved linearly in the EBM. This would explain why the EBM and Logistic Regression have similar performance on the dataset. We noted that a person’s intelligence did not affect their prediction of being matched significantly until it fell below roughly 2.2. This seems to suggest that as long as you are above some baseline intelligence, how smart you are doesn’t matter for these short-duration dates.
+Some interesting inferences can be made from these graphs. For starters, we observed that many of the most important features behaved linearly in the EBM. This would explain why the EBM and Logistic Regression have similar performance on the dataset. We noted that a person’s intelligence did not affect their prediction of being matched significantly until it fell below roughly 2.2. This seems to suggest that as long as you are above some baseline intelligence, how smart you are doesn’t matter for these short-duration dates. Another interesting phenomena the EDM picked up on was that very high age difference corresponded to a much higher score. Since we defined age difference as partners age - individual age this implies that you are much more likely to get a second date if your partner is significantly older than you are. For the categorical features, we noted that this model implies that men are less picky than women when deciding for a second date and that being the same race was one of the more negligible features.
+
 
 ## Fairness and Weapons of Math Destruction
 
