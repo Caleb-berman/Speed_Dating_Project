@@ -60,7 +60,7 @@ Logistic Models are used to predict a binary classifier using a numeric dataset.
 $$\Sigma l_{logistic} + \lambda *\Sigma w^2$$
 
 Subject to loss:
-$$\mathcal{l}_{logistic}(x,y;w) = log(1+e^{-yw^T x})$$
+$\mathcal{l}_{logistic}(x,y;w) = log(1+e^{-yw^T x})$
 
 We fit a logistic model to our data to have a probabilistic interpretation of predictions. We used L2 regularization with $\lambda$ equal to 1 as that performed better compared to l1 regularization and changing $\lambda$ slightly only had negligible effects on the model. The model was fit on all features listed above but, after applying an L2 regularizer, all but four coefficients were pushed towards zero. As a result we identified fun_o, shar_o, avg_attr_self and attr_o as the features which had the most impact on the model’s predictions for a partner’s interest. In Figure 3 observe that SciKit-Learn’s permutation feature importance attribute identified these four features as well. These results suggest that partners’ are most likely to want to match with people who they perceive as fun, having shared interests/hobbies, and physically attractive.
 
